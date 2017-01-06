@@ -1,0 +1,11 @@
+<?php
+	session_start();
+	unset($_SESSION["email"]);
+	unset($_SESSION["login"]);
+	unset($_SESSION["id_user"]);
+	unset($_SESSION["sex"]);
+	unset($_SESSION["city"]);
+	unset($_SESSION["name"]);
+	unset($_SESSION["is_admin"]);
+	header("Location:index.php");
+?>
